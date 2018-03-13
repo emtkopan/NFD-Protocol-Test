@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8C2A4E2C2024341B00BCB2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4E2B2024341B00BCB2A4 /* AppDelegate.swift */; };
-		8C2A4E2E2024341C00BCB2A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4E2D2024341C00BCB2A4 /* ViewController.swift */; };
 		8C2A4E312024341C00BCB2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A4E2F2024341C00BCB2A4 /* Main.storyboard */; };
 		8C2A4E332024341C00BCB2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A4E322024341C00BCB2A4 /* Assets.xcassets */; };
 		8C2A4E362024341C00BCB2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A4E342024341C00BCB2A4 /* LaunchScreen.storyboard */; };
+		8C6785912049C3FB0076F7F7 /* Category1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6785902049C3FB0076F7F7 /* Category1TableViewController.swift */; };
+		8C6785932049D24C0076F7F7 /* Category2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6785922049D24C0076F7F7 /* Category2TableViewController.swift */; };
+		8C678595204C4B200076F7F7 /* AllProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C678594204C4B200076F7F7 /* AllProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C2A4E282024341B00BCB2A4 /* NFD Protocol Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFD Protocol Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2A4E2B2024341B00BCB2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C2A4E2D2024341C00BCB2A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C2A4E302024341C00BCB2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C2A4E322024341C00BCB2A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2A4E352024341C00BCB2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C2A4E372024341C00BCB2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6785902049C3FB0076F7F7 /* Category1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category1TableViewController.swift; sourceTree = "<group>"; };
+		8C6785922049D24C0076F7F7 /* Category2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category2TableViewController.swift; sourceTree = "<group>"; };
+		8C678594204C4B200076F7F7 /* AllProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				8C2A4E2B2024341B00BCB2A4 /* AppDelegate.swift */,
-				8C2A4E2D2024341C00BCB2A4 /* ViewController.swift */,
+				8C6785902049C3FB0076F7F7 /* Category1TableViewController.swift */,
+				8C6785922049D24C0076F7F7 /* Category2TableViewController.swift */,
+				8C678594204C4B200076F7F7 /* AllProtocols.swift */,
 				8C2A4E2F2024341C00BCB2A4 /* Main.storyboard */,
 				8C2A4E322024341C00BCB2A4 /* Assets.xcassets */,
 				8C2A4E342024341C00BCB2A4 /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2A4E2E2024341C00BCB2A4 /* ViewController.swift in Sources */,
 				8C2A4E2C2024341B00BCB2A4 /* AppDelegate.swift in Sources */,
+				8C6785912049C3FB0076F7F7 /* Category1TableViewController.swift in Sources */,
+				8C6785932049D24C0076F7F7 /* Category2TableViewController.swift in Sources */,
+				8C678595204C4B200076F7F7 /* AllProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
