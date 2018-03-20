@@ -34,34 +34,25 @@ class Category1TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return category1Array.count
-		
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "1stCell", for: indexPath) as UITableViewCell
-
+		let cell = tableView.dequeueReusableCell(withIdentifier: "1stCell", for: indexPath)
 		cell.textLabel?.text = category1Array[indexPath.row]
-		
         return cell
-		
     }
+    
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		category1Array = category2Array[indexPath.row]
-		
 		performSegue(withIdentifier: "1stSegue", sender: category1Array)
 	}
+    
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		
-		let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow! as NSIndexPath
-		
-		let destViewController = segue.destination as! Category2TableViewController
-		
-		var cat2Array2 : ProtocolDef
-		
-		cat2Array2 = category2Array[indexPath.row]
-		
-		destViewController.category2Array = cat2Array2.protocolTitle
+        guard let indexPath = tableView.indexPathForSelectedRow,
+            let destViewController = segue.destination as? Category2TableViewController else {
+                return
+        }
+		let protocolDef = category2Array[indexPath.row]
+		destViewController.category2Array = protocolDef.protocolTitle
 	}
-	
 }

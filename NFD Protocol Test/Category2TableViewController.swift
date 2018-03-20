@@ -29,20 +29,15 @@ class Category2TableViewController: UITableViewController {
 	var pediatric = ["General Rules for Pediatric Patients", "Pediatric Allergic Reactions/Anaphalaxis", "Pediatric Altered Mental Status (AMS), Syncope/Near Syncope", "Pediatric Asthma/Bronchospasm", "Pediatric Bradycardia", "Pediatric Burns", "Pediatric Cardiac Arrest, Asystole & EMD/PEA", "Pediatric Croup", "Pediatric Cyanide Exposure", "Pediatric Hypoglycemia", "Pediatric Hypovelemic Shock", "Pediatric Neonatal Resuscitation", "Pediatric Overdose/Ingestion", "Pediatric Seizures", "Pediatric Tachycardia", "Pediatric Trauma", "Pediatric Ventricular Fibrillation or Pulseless Ventricular Tachycardia", "Pediatric Drowning"]
 	*/
 
-
-
-		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-			
-			return category2Array.count
     }
 
-		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "2ndCell", for: indexPath) as UITableViewCell
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return category2Array.count
+    }
 
-			cell.textLabel?.text = category2Array[indexPath.row]
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "2ndCell", for: indexPath)
+        cell.textLabel?.text = category2Array[indexPath.row]
         return cell
     }
-		
-}
 }
